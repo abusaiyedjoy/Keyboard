@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Keyboard</title>
+    <style>
+        .keyboard{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288) ;
+        }
+        .keys input{
+            height: 50px;
+            min-width: 50px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            font-size: 20px;
+            color: gray;
+            text-transform: uppercase;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94,104,121,0.288) ;
+        }
+        .keys input:focus{
+            color: #3498db;
+            font-size: 18px;
+            box-shadow:inset -3px -3px 7px #ffffff73, inset 2px 2px 5px rgba(94,104,121,0.288) ;
+        }
+    </style>
+</head>
+<body class="dark:bg-slate-800 flex justify-center box-border flex-col bg-[#dde1e7] items-center min-h-screen">
+    <div class="keyboard">
+        <div class="keys flex justify-center items-center">
+            <input type="button" value="q">
+            <input type="button" value="w">
+            <input type="button" value="e">
+            <input type="button" value="r">
+            <input type="button" value="t">
+            <input type="button" value="y">
+            <input type="button" value="u">
+            <input type="button" value="i">
+            <input type="button" value="o">
+            <input type="button" value="p">
+        </div>
+        <div class="keys flex justify-center items-center">
+            <input type="button" value="a">
+            <input type="button" value="s">
+            <input type="button" value="d">
+            <input type="button" value="f">
+            <input type="button" value="g">
+            <input type="button" value="h">
+            <input type="button" value="j">
+            <input type="button" value="k">
+            <input type="button" value="l">
+        </div>
+        <div class="keys flex justify-center items-center">
+            <input type="button" value="z">
+            <input type="button" value="x">
+            <input type="button" value="c">
+            <input type="button" value="v">
+            <input type="button" value="b">
+            <input type="button" value="n">
+            <input type="button" value="m">
+        </div>
+        <div class="keys w-full flex justify-center items-center">
+            <input class="w-[60%]" type="button" value="Space">
+        </div>
+    </div>
+</body>
+</html>
